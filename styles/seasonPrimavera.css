@@ -1,7 +1,7 @@
 /* ============================================
-   ANIME OTOÑO 2025 - ESTILOS MATRIX/NEON
+   ANIME PRIMAVERA 2025 - ESTILOS MATRIX/NEON
    Autor: Jaykai2
-   Paleta inspirada en colores otoñales
+   Paleta inspirada en colores primaverales
    ============================================ */
 
 /* === RESET Y BASE === */
@@ -13,11 +13,11 @@
 
 body {
   font-family: 'Roboto Mono', monospace;
-  background-color: #1a0f0a;
+  background-color: #0f172a;
   background-image: 
-    radial-gradient(circle at 25% 30%, #3d1f0f 0%, transparent 40%),
-    radial-gradient(circle at 75% 70%, #1a0f0a 0%, transparent 40%);
-  color: #ffb380;
+    radial-gradient(circle at 25% 30%, #1e293b 0%, transparent 40%),
+    radial-gradient(circle at 75% 70%, #0f172a 0%, transparent 40%);
+  color: #d4f1d4;
   line-height: 1.6;
   min-height: 100vh;
 }
@@ -26,15 +26,15 @@ body {
 header {
   text-align: center;
   padding: 3rem 1rem;
-  border-bottom: 2px solid #ff6b3540;
+  border-bottom: 2px solid #86efac40;
   position: relative;
 }
 
 h1 {
   font-size: 3rem;
   font-weight: 700;
-  color: #ffd4a3;
-  text-shadow: 0 0 10px #ff8c42, 0 0 20px #ff8c42, 0 0 30px #ff6b35;
+  color: #d4f1f4;
+  text-shadow: 0 0 10px #86efac, 0 0 20px #4ade80, 0 0 30px #22c55e, 0 0 40px #16a34a;
   margin-bottom: 1rem;
   letter-spacing: 0.1em;
   animation: glow 2s ease-in-out infinite alternate;
@@ -42,10 +42,10 @@ h1 {
 
 @keyframes glow {
   from {
-    text-shadow: 0 0 10px #ff8c42, 0 0 20px #ff8c42, 0 0 30px #ff6b35;
+    text-shadow: 0 0 10px #86efac, 0 0 20px #4ade80, 0 0 30px #22c55e, 0 0 40px #16a34a;
   }
   to {
-    text-shadow: 0 0 15px #ff8c42, 0 0 30px #ff6b35, 0 0 45px #d84315;
+    text-shadow: 0 0 15px #86efac, 0 0 30px #4ade80, 0 0 45px #22c55e, 0 0 60px #16a34a;
   }
 }
 
@@ -70,29 +70,29 @@ h1 {
   padding: 0.8rem 1.2rem;
   font-size: 1rem;
   font-family: 'Roboto Mono', monospace;
-  background-color: rgba(26, 15, 10, 0.7);
-  border: 2px solid #ff8c4280;
+  background-color: rgba(15, 23, 42, 0.7);
+  border: 2px solid #86efac80;
   border-radius: 8px;
-  color: #ffb380;
+  color: #d4f1d4;
   transition: all 0.3s ease;
 }
 
 #searchBar:focus {
   outline: none;
-  border-color: #ff8c42;
-  box-shadow: 0 0 15px #ff8c4280;
+  border-color: #86efac;
+  box-shadow: 0 0 20px #86efac80, 0 0 30px #4ade8040;
 }
 
 #searchBar::placeholder {
-  color: #ff8c4280;
+  color: #86efac80;
 }
 
 #darkModeToggle {
   padding: 0.8rem 1.5rem;
-  background-color: rgba(255, 140, 66, 0.1);
-  border: 2px solid #ff8c42;
+  background-color: rgba(134, 239, 172, 0.1);
+  border: 2px solid #86efac;
   border-radius: 8px;
-  color: #ffb380;
+  color: #d4f1d4;
   font-family: 'Roboto Mono', monospace;
   font-weight: 700;
   cursor: pointer;
@@ -102,9 +102,9 @@ h1 {
 }
 
 #darkModeToggle:hover {
-  background-color: #ff8c42;
-  color: #1a0f0a;
-  box-shadow: 0 0 15px #ff8c42;
+  background-color: #86efac;
+  color: #0f172a;
+  box-shadow: 0 0 20px #86efac, 0 0 30px #4ade80;
   transform: translateY(-2px);
 }
 
@@ -119,21 +119,21 @@ h1 {
 .section-title {
   font-size: 2rem;
   font-weight: 700;
-  color: #ffd666;
-  text-shadow: 0 0 10px #ffab40, 0 0 20px #ff9100;
+  color: #fbbf24;
+  text-shadow: 0 0 15px #fcd34d, 0 0 25px #fbbf24, 0 0 35px #f59e0b;
   text-align: center;
   margin: 3rem 0 2rem;
   padding: 1rem;
-  border-top: 2px solid #ffab4040;
-  border-bottom: 2px solid #ffab4040;
+  border-top: 2px solid #fcd34d40;
+  border-bottom: 2px solid #fcd34d40;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
 /* === ANIME CARDS === */
 .anime-card {
-  background: linear-gradient(135deg, rgba(26, 15, 10, 0.9) 0%, rgba(61, 31, 15, 0.7) 100%);
-  border: 2px solid #ff8c4260;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(30, 41, 59, 0.7) 100%);
+  border: 2px solid #86efac60;
   border-radius: 16px;
   padding: 2rem;
   margin-bottom: 3rem;
@@ -142,12 +142,12 @@ h1 {
   gap: 2.5rem;
   transition: all 0.3s ease;
   backdrop-filter: blur(10px);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 20px rgba(134, 239, 172, 0.1);
 }
 
 .anime-card:hover {
-  border-color: #ff8c42;
-  box-shadow: 0 0 30px #ff8c4280, 0 12px 40px rgba(0, 0, 0, 0.7);
+  border-color: #86efac;
+  box-shadow: 0 0 40px #86efac80, 0 0 60px #4ade8040, 0 12px 40px rgba(0, 0, 0, 0.7);
   transform: translateY(-8px);
 }
 
@@ -158,8 +158,8 @@ h1 {
   height: 550px;
   overflow: hidden;
   border-radius: 16px;
-  border: 3px solid #ff8c42;
-  box-shadow: 0 8px 24px rgba(255, 140, 66, 0.3);
+  border: 3px solid #86efac;
+  box-shadow: 0 8px 24px rgba(134, 239, 172, 0.4), 0 0 40px rgba(74, 222, 128, 0.2);
 }
 
 .carousel-title {
@@ -173,8 +173,8 @@ h1 {
   font-size: 1.3rem;
   text-align: center;
   z-index: 10;
-  color: #ffd4a3;
-  text-shadow: 0 0 15px #000, 0 0 30px #ff8c42;
+  color: #d4f1f4;
+  text-shadow: 0 0 15px #000, 0 0 30px #86efac, 0 0 40px #4ade80;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
@@ -196,7 +196,7 @@ h1 {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(255, 140, 66, 0.8);
+  background: rgba(134, 239, 172, 0.8);
   border: none;
   color: white;
   font-size: 2rem;
@@ -214,8 +214,8 @@ h1 {
 }
 
 .carousel-btn:hover {
-  background: #ff8c42;
-  box-shadow: 0 0 15px #ff8c42;
+  background: #86efac;
+  box-shadow: 0 0 25px #86efac, 0 0 40px #4ade80;
   transform: translateY(-50%) scale(1.1);
 }
 
@@ -230,7 +230,7 @@ h1 {
   background: rgba(0, 0, 0, 0.3);
   padding: 1.5rem;
   border-radius: 12px;
-  border: 1px solid #ff8c4220;
+  border: 1px solid #86efac20;
 }
 
 .details p {
@@ -240,8 +240,8 @@ h1 {
 }
 
 .details strong {
-  color: #ffab40;
-  text-shadow: 0 0 8px #ff9100;
+  color: #fcd34d;
+  text-shadow: 0 0 10px #fbbf24, 0 0 15px #f59e0b;
   font-size: 1.1rem;
   display: inline-block;
   margin-right: 0.5rem;
@@ -251,10 +251,10 @@ h1 {
 .fav-btn {
   align-self: flex-start;
   padding: 0.8rem 1.5rem;
-  background-color: rgba(255, 171, 64, 0.1);
-  border: 2px solid #ffab40;
+  background-color: rgba(252, 211, 77, 0.1);
+  border: 2px solid #fcd34d;
   border-radius: 8px;
-  color: #ffab40;
+  color: #fcd34d;
   font-family: 'Roboto Mono', monospace;
   font-weight: 700;
   cursor: pointer;
@@ -264,16 +264,17 @@ h1 {
 }
 
 .fav-btn:hover {
-  background-color: #ffab40;
-  color: #1a0f0a;
-  box-shadow: 0 0 15px #ffab40;
+  background-color: #fcd34d;
+  color: #0f172a;
+  box-shadow: 0 0 20px #fcd34d, 0 0 30px #fbbf24;
   transform: translateY(-2px);
 }
 
 .fav-btn.active {
-  background-color: #ff9100;
-  border-color: #ff9100;
-  color: #1a0f0a;
+  background-color: #fbbf24;
+  border-color: #fbbf24;
+  color: #0f172a;
+  box-shadow: 0 0 20px #fbbf24;
 }
 
 /* === TRAILERS === */
@@ -285,7 +286,7 @@ h1 {
   padding: 1.5rem;
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 12px;
-  border: 1px solid #ff8c4240;
+  border: 1px solid #86efac40;
 }
 
 .trailers::before {
@@ -293,15 +294,16 @@ h1 {
   position: absolute;
   top: -0.5rem;
   left: 1rem;
-  background: #1a0f0a;
+  background: #0f172a;
   padding: 0.3rem 1rem;
-  color: #ffab40;
+  color: #fcd34d;
   font-weight: 700;
   font-size: 0.9rem;
   border-radius: 4px;
-  border: 1px solid #ffab4040;
+  border: 1px solid #fcd34d40;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  text-shadow: 0 0 10px #fbbf24;
 }
 
 .trailers {
@@ -312,22 +314,22 @@ iframe {
   width: 100%;
   height: 280px;
   border-radius: 12px;
-  border: 3px solid #ff8c42;
+  border: 3px solid #86efac;
   transition: all 0.3s ease;
   background: #000;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5), 0 0 15px rgba(134, 239, 172, 0.2);
 }
 
 iframe:hover {
-  border-color: #ffab40;
-  box-shadow: 0 0 25px #ff8c42, 0 0 40px #ff6b3580;
+  border-color: #fcd34d;
+  box-shadow: 0 0 30px #86efac, 0 0 50px #4ade8080;
   transform: scale(1.02);
 }
 
 /* === FAVORITES SECTION === */
 .favorites {
-  background-color: rgba(26, 15, 10, 0.8);
-  border: 2px solid #d4af3750;
+  background-color: rgba(15, 23, 42, 0.8);
+  border: 2px solid #f9a8d450;
   border-radius: 12px;
   padding: 2rem;
   margin: 3rem 1rem;
@@ -335,8 +337,8 @@ iframe:hover {
 }
 
 .favorites h2 {
-  color: #ffd666;
-  text-shadow: 0 0 10px #ffab40;
+  color: #fbcfe8;
+  text-shadow: 0 0 15px #f9a8d4, 0 0 25px #f472b6;
   margin-bottom: 1.5rem;
   font-size: 1.8rem;
   letter-spacing: 0.1em;
@@ -344,10 +346,10 @@ iframe:hover {
 
 #clearFavoritesBtn {
   padding: 0.8rem 1.5rem;
-  background-color: rgba(212, 175, 55, 0.1);
-  border: 2px solid #d4af37;
+  background-color: rgba(249, 168, 212, 0.1);
+  border: 2px solid #f9a8d4;
   border-radius: 8px;
-  color: #d4af37;
+  color: #f9a8d4;
   font-family: 'Roboto Mono', monospace;
   font-weight: 700;
   cursor: pointer;
@@ -357,47 +359,48 @@ iframe:hover {
 }
 
 #clearFavoritesBtn:hover {
-  background-color: #d4af37;
-  color: #1a0f0a;
-  box-shadow: 0 0 15px #d4af37;
+  background-color: #f9a8d4;
+  color: #0f172a;
+  box-shadow: 0 0 20px #f9a8d4, 0 0 30px #f472b6;
 }
 
 .fav-list {
-  color: #ffb380;
+  color: #d4f1d4;
   font-size: 1.1rem;
   list-style: none;
   padding: 0;
 }
 
 .fav-list.none {
-  color: #ff8c4280;
+  color: #86efac80;
   font-style: italic;
 }
 
 .fav-list li {
   padding: 0.8rem;
-  border-bottom: 1px solid #ff8c4220;
+  border-bottom: 1px solid #86efac20;
   transition: all 0.3s ease;
 }
 
 .fav-list li:hover {
-  background-color: rgba(255, 140, 66, 0.1);
+  background-color: rgba(134, 239, 172, 0.1);
   padding-left: 1.2rem;
+  box-shadow: 0 0 10px rgba(134, 239, 172, 0.2);
 }
 
 /* === FOOTER === */
 footer {
   text-align: center;
   padding: 2rem;
-  border-top: 2px solid #ff8c4240;
+  border-top: 2px solid #86efac40;
   margin-top: 3rem;
-  color: #ff8c42;
+  color: #86efac;
 }
 
 footer .credit {
   font-size: 1.2rem;
-  color: #ffab40;
-  text-shadow: 0 0 10px #ff9100;
+  color: #fcd34d;
+  text-shadow: 0 0 15px #fbbf24, 0 0 25px #f59e0b;
   margin-bottom: 0.5rem;
 }
 
@@ -409,19 +412,19 @@ footer p {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.8rem 1.5rem;
-  background: rgba(255, 140, 66, 0.1);
-  border: 2px solid #ff8c42;
+  background: rgba(134, 239, 172, 0.1);
+  border: 2px solid #86efac;
   border-radius: 25px;
-  color: #ffb380;
+  color: #d4f1d4;
   text-decoration: none;
   font-weight: 700;
   transition: all 0.3s ease;
 }
 
 .footer-link:hover {
-  background: #ff8c42;
-  color: #1a0f0a;
-  box-shadow: 0 0 20px #ff8c42;
+  background: #86efac;
+  color: #0f172a;
+  box-shadow: 0 0 25px #86efac, 0 0 35px #4ade80;
   transform: translateY(-2px);
 }
 

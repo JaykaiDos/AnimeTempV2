@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime Verano 2025</title>
+  <link rel="stylesheet" href="../styles/seasonsVerano.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- BOTÓN DE REGRESO -->
+
+  <header class="main-header">
+    <h1>🎌 Anime Verano 2025 🎌</h1>
+    <p class="season-subtitle">☀️ Julio - Septiembre 2025</p>
+        <nav class="main-nav">
+    <p><a href="../index.html" class="footer-link">← Volver al Hub Principal</a></p>
+        </nav>
+  </header>
+
+  <div class="controls">
+    <div class="search-container">
+      <input type="search" id="searchBar" placeholder="Buscar anime por título..." aria-label="Buscar anime">
+    </div>
+    <button id="darkModeToggle" aria-label="Cambiar modo oscuro">Modo Alternativo</button>
+  </div>
+
+  <div class="container">
+
+    <!-- ============================================ -->
+    <!-- SECCIÓN: CONTINUACIONES -->
+    <!-- ============================================ -->
+    <h2 class="section-title">⭐ Continuaciones ⭐</h2>
+
+    <!-- Anime 1: Boku no Hero Academia -->
+    <article class="anime-card" data-title="En desarrollo" id="anime1">
+      <div class="carousel-container">
+        <div class="carousel-title">??</div>
+        <button class="carousel-btn prev" aria-label="Anterior">‹</button>
+        <div class="carousel-images">
+          <img src="" alt="en desarrollo imagen 1">
+          <img src="" alt="desarrollo imagen 2">
+        </div>
+        <button class="carousel-btn next" aria-label="Siguiente">›</button>
+      </div>
+      <div class="details">
+        <p><strong>Título:</strong> ???</p>
+        <p><strong>Sinopsis:</strong>???</p>
+        <button class="fav-btn" data-id="anime1">Agregar a Favoritos</button>
+        <div class="trailers">
+          <iframe src="" title="Trailer1" allowfullscreen></iframe>
+          <iframe src="" title="Trailer 2" allowfullscreen></iframe>
+        </div>
+      </div>
+    </article>
+
+    <!-- ============================================ -->
+    <!-- SECCIÓN: NUEVOS ESTRENOS -->
+    <!-- ============================================ -->
+    <h2 class="section-title">🆕 Nuevos Estrenos 🆕</h2>
+
+    <!-- Anime 5: Wandance -->
+    <article class="anime-card" data-title="En desarrollo" id="anime5">
+      <div class="carousel-container">
+        <div class="carousel-title">??</div>
+        <button class="carousel-btn prev" aria-label="Anterior">‹</button>
+        <div class="carousel-images">
+          <img src="" alt="imagen 1">
+          <img src="" alt="imagen 2">
+          <img src="" alt="imagen 3">
+        </div>
+        <button class="carousel-btn next" aria-label="Siguiente">›</button>
+      </div>
+      <div class="details">
+        <p><strong>Título:</strong> ??</p>
+        <p><strong>Sinopsis:</strong> ????</p>
+        <button class="fav-btn" data-id="anime5">Agregar a Favoritos</button>
+        <div class="trailers">
+          <iframe src="" title="Trailer" allowfullscreen></iframe>
+          <iframe src="" title="Trailer 2" allowfullscreen></iframe>
+        </div>
+      </div>
+    </article>
+
+
+
+    <!-- 
+      NOTA: Agrega más animes aquí copiando la estructura de arriba 
+      Solo cambia:
+      - id="animeX"
+      - data-title="Título del Anime"
+      - Imágenes del carrusel
+      - Detalles y trailers
+    -->
+
+  </div>
+
+  <!-- ============================================ -->
+  <!-- SECCIÓN: FAVORITOS -->
+  <!-- ============================================ -->
+  <section class="favorites">
+    <h2>⭐ Mis Favoritos ⭐</h2>
+    <button id="clearFavoritesBtn">Limpiar Favoritos</button>
+    <p class="fav-list none">No tienes animes favoritos aún.</p>
+    <ul class="fav-list"></ul>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- FOOTER -->
+  <!-- ============================================ -->
+  <footer>
+    <p class="credit">✨ Hecho por Jaykai2 ✨</p>
+    <p>A</p>
+    <p><a href="../index.html" class="footer-link">← Volver al Hub Principal</a></p>
+  </footer>
+
+  <script src="../js/seasons.js"></script>
+
+</body>
+</html>
