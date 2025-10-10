@@ -25,6 +25,13 @@ const animesDatabase = [
     season: '???',
     image: 'https://u.livechart.me/anime_visuals/local_version/13853/image/ad92c398d8bb190611e03058e0eda280.webp/large.jpg',
     type: 'Continuación'
+  },
+    {
+    id: 'anime4',
+    title: 'Fate/stay night Movie: Heavens Feel - I. Presage Flower',
+    season: 'Ruta 3',
+    image: 'https://cdn.jkdesu.com/assets/images/animes/image/fatestay-night-movie-heavens-feel-i-presage-flower.jpg',
+    type: 'Película'
   }
   // Agrega más animes aquí siguiendo el mismo formato
 ];

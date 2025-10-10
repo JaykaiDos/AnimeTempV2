@@ -61,6 +61,24 @@ const animesData = {
       title: `Episodio ${i + 1}`,
       duration: '24 min'
     }))
+  },
+  'anime4': {
+    id: 'anime4',
+    title: 'Fate/stay night Movie: Heavens Feel - I. Presage Flower',
+    season: 'Ruta 3',
+    seasonName: ' Otoño 2017',
+    poster: 'https://cdn.jkdesu.com/assets/images/animes/image/fatestay-night-movie-heavens-feel-i-presage-flower.jpg',
+    synopsis: 'La Guerra del Santo Grial: una violenta batalla entre magos en la que siete maestros y sus sirvientes convocados luchan por el Santo Grial, un artefacto magico que puede otorgarle al vencedor cualquier deseo. Hace casi 10 años, la batalla final de la Cuarta Guerra del Santo Grial causo estragos en la ciudad de Fuyuki y se llevo más de 500 vidas, dejando la ciudad devastada. Shirou Emiya, un sobreviviente de esta tragedia, aspira a convertirse en un heroe de la justicia como su salvador y padre adoptivo, Kiritsugu Emiya. A pesar de ser solo un estudiante, Shirou se ve envuelto en la Quinta Guerra del Santo Grial cuando accidentalmente ve una batalla entre sirvientes en la escuela y convoca a su propio sirviente, Saber.',
+    episodes: 1,
+    status: 'Finalizado',
+    trailers: [
+      'https://www.youtube.com/embed/r_sf0-o9tS0'
+    ],
+    episodesList: Array.from({ length: 1 }, (_, i) => ({
+      number: i + 1,
+      title: `Episodio ${i + 1}`,
+      duration: '2hr.'
+    }))
   }
   // Agregar más animes siguiendo el mismo patrón
 };
