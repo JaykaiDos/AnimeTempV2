@@ -8,22 +8,19 @@ const animesData = {
   'anime1': {
     id: 'anime1',
     title: 'Boku no Hero Academia FINAL SEASON',
-    episodes: 24,
-    episodesList: Array.from({ length: 24 }, (_, i) => ({
-      number: i + 1,
-      title: `Episodio ${i + 1}`,
-      duration: '24 min',
-      // Ejemplo con links de Google Drive
-      videoUrl: `https://drive.google.com/file/d/1UW8oscUrJLNFmakLMJLhhOh3yROZXatq/preview`
-    }))
-  },
+    episodes: 1,
+episodesList: [
+  { number: 1, title: '??', duration: '24 min', videoUrl: '//ok.ru/videoembed/10735882144275?nochat=1' }
+]} ,
+
   'anime2': {
     id: 'anime2',
     title: 'Fumetsu no Anata e Season 3',
-    episodes: 12,
+    episodes: 1,
 episodesList: [
-  { number: 1, title: '??', duration: '24 min', videoUrl: 'https://drive.google.com/file/d/1UW8oscUrJLNFmakLMJLhhOh3yROZXatq/preview' }
+  { number: 1, title: '??', duration: '24 min', videoUrl: '//ok.ru/videoembed/10735882144275?nochat=1' }
 ]},
+
   'anime3': {
     id: 'anime3',
     title: 'Fumetsu no Anata e Season 2',
