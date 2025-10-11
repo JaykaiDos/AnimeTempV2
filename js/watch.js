@@ -89,26 +89,50 @@ const saveWatchedEpisodes = (animeId, episodes) => {
 };
 
 // ============================================
-// CONVERTIR LINK DE GOOGLE DRIVE
+// CONVERTIR LINKS DE DIFERENTES PLATAFORMAS
 // ============================================
-const getEmbedUrl = (driveUrl) => {
-  // Si ya es un link de preview, retornarlo
-  if (driveUrl.includes('/preview')) {
-    return driveUrl;
+const getEmbedUrl = (videoUrl) => {
+  // Ok.ru: Asegurar que tenga protocolo HTTPS
+  if (videoUrl.includes('ok.ru')) {
+    // Si empieza con //, agregar https:
+    if (videoUrl.startsWith('//')) {
+      return 'https:' + videoUrl;
+    }
+    return videoUrl;
   }
   
-  // Convertir link de view a preview
-  if (driveUrl.includes('/view')) {
-    return driveUrl.replace('/view', '/preview');
+  // Google Drive: Si ya es un link de preview, retornarlo
+  if (videoUrl.includes('/preview')) {
+    return videoUrl;
   }
   
-  // Extraer ID del archivo y crear URL de embed
-  const fileIdMatch = driveUrl.match(/\/d\/([^/]+)/);
+  // Google Drive: Convertir link de view a preview
+  if (videoUrl.includes('/view')) {
+    return videoUrl.replace('/view', '/preview');
+  }
+  
+  // Google Drive: Extraer ID del archivo y crear URL de embed
+  const fileIdMatch = videoUrl.match(/\/d\/([^/]+)/);
   if (fileIdMatch) {
     return `https://drive.google.com/file/d/${fileIdMatch[1]}/preview`;
   }
   
-  return driveUrl;
+  // YouTube: Convertir a formato embed si es necesario
+  if (videoUrl.includes('youtube.com/watch')) {
+    const urlParams = new URLSearchParams(new URL(videoUrl).search);
+    const videoId = urlParams.get('v');
+    if (videoId) {
+      return `https://www.youtube.com/embed/${videoId}`;
+    }
+  }
+  
+  if (videoUrl.includes('youtu.be/')) {
+    const videoId = videoUrl.split('youtu.be/')[1].split('?')[0];
+    return `https://www.youtube.com/embed/${videoId}`;
+  }
+  
+  // Para cualquier otra URL, retornarla tal cual
+  return videoUrl;
 };
 
 // ============================================
